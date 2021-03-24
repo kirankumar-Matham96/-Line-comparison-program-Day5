@@ -71,14 +71,18 @@ public class LineComparisonProgram
 		Double dl1 = length_of_line_1;
 		Double dl2 = length_of_line_2;
 
-		//checking equality condition
-		if(dl1.equals(dl2))
+		//comparing length of two lines
+		if((dl1.compareTo(dl2)) == 0)
 		{
 			System.out.println("Two lines are equal in length");
 		}
+		else if((dl1.compareTo(dl2)) == 1)
+		{
+			System.out.println("First line is bigger than the Second one");
+		}
 		else
 		{
-			System.out.println("Two lines are NOT equal in length");
+			System.out.println("Second line is bigger than the First one");
 		}
 	}
 }
